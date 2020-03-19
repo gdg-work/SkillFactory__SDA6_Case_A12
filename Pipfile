@@ -9,6 +9,8 @@ verify_ssl = true
 jupytext = "*"
 ggplot = "*"
 seaborn = "*"
+sklearn = "*"
+statsmodels = "*"
 
 [requires]
 python_version = "3.8"
