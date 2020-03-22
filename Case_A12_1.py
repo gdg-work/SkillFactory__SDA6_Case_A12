@@ -42,7 +42,7 @@ from statsmodels.graphics.gofplots import qqplot # Импорт части би�
 sns.set()
 plt.ioff()
 
-mark_data = pd.read_csv('Data1/sales_prediction.csv.bz2')
+mark_data = pd.read_csv('https://miscelanneous.s3-eu-west-1.amazonaws.com/SkillFactory/SDA_CaseA12/sales_prediction.csv.bz2')
 mark_data = mark_data.set_index('month_number')
 display(mark_data.head())
 

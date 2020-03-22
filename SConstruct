@@ -21,5 +21,9 @@ env = Environment(ENV = {'PATH' : os.environ['PATH'] },
 env.Depends('Case_A12_1.ipynb', 'Case_A12_1.py')
 env.Depends('Case_A12_2.ipynb', 'Case_A12_2.py')
 
-env.Default('Case_A12_2.ipynb')
+Notebooks = ['Case_A12_1.ipynb', 'Case_A12_2.ipynb']
+
+env.Default(Notebooks)
+
+env.Python(source='Case_A12_1.py')
 env.Python(source='Case_A12_2.py')

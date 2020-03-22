@@ -90,7 +90,7 @@ sns.set_style('whitegrid')
 plt.ioff()
 
 # read data
-mark_data = pd.read_csv('Data2/lights_sales_data.csv.bz2')
+mark_data = pd.read_csv('https://miscelanneous.s3-eu-west-1.amazonaws.com/SkillFactory/SDA_CaseA12/lights_sales_data.csv.bz2')
 mark_data = mark_data.set_index('month_number')
 
 # %% [markdown]
