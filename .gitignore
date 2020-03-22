@@ -1,2 +1,6 @@
 .ipynb_checkpoints
+.ipynb_checkpoints/*
+,*
+.sconsign.dblite
 Case_A12_1.ipynb
+Case_A12_2.ipynb

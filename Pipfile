@@ -13,6 +13,7 @@ sklearn = "*"
 statsmodels = "*"
 jupyter-server = "*"
 jupyter = "*"
+scons = "*"
 
 [requires]
 python_version = "3.8"
