@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+#!/usr/bin/env python
 # —-
 # jupyter:
 #   jupytext:
@@ -89,6 +89,13 @@ matplotlib_axes_logger.setLevel('ERROR')  # disable color warnings in Matplotlib
 sns.set_style('whitegrid')
 plt.ioff()
 
+# make the program work outside Jupyter and iPython
+try:
+    __ = get_ipython()
+except NameError:
+    def display(*args, **kwargs):
+        print(*args, **kwargs)
+
 # read data
 mark_data = pd.read_csv('https://miscelanneous.s3-eu-west-1.amazonaws.com/SkillFactory/SDA_CaseA12/lights_sales_data.csv.bz2')
 mark_data = mark_data.set_index('month_number')
@@ -97,9 +104,9 @@ mark_data = mark_data.set_index('month_number')
 # Для начала посмотрим, какие есть колонки и сколько значений, потом поищем связи между колонками.
 
 # %%
-display(mark_data.info())
+print(mark_data.info())
 # Колонки
-display(mark_data.head(3))
+print(mark_data.head(3))
 
 
 # %% [markdown]
