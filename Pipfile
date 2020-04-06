@@ -14,6 +14,7 @@ statsmodels = "*"
 jupyter-server = "*"
 jupyter = "*"
 scons = "*"
+bleach = "*"
 
 [requires]
 python_version = "3.8"
